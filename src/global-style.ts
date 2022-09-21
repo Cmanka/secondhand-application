@@ -101,6 +101,9 @@ export const GlobalStyle = styled.createGlobalStyle`
   html {
     height: 100%;
   }
+  #root {
+    height: 100%;
+  }
 
   article,
   aside,
@@ -150,8 +153,10 @@ export const GlobalStyle = styled.createGlobalStyle`
 
   a {
     text-decoration: none;
+    transition: opacity 0.2s linear;
   }
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 0.6;
   }
 `;

@@ -1,11 +1,14 @@
 import React, { FC } from 'react';
 import { AppRoutes } from '../../core/constants/app-routes';
-import { Wrapper, Link } from './styles';
+import { Wrapper, Link, Logo } from './styles';
+
+const HEADER_ROUTES = [{ label: 'Components', path: AppRoutes.Components }];
 
 const Header: FC = () => {
   return (
     <Wrapper>
-      {Object.entries(AppRoutes).map(([label, path]) => (
+      <Logo to={AppRoutes.Home}>2Hand</Logo>
+      {HEADER_ROUTES.map(({ label, path }) => (
         <Link key={path} to={path}>
           {label}
         </Link>
