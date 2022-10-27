@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { AppRoutes } from '../../core/constants/app-routes';
+import { AppRoutes } from '../../pages/core/constants/app-routes';
 import { Components } from '../../pages/components';
 import { Home } from '../../pages/home';
 

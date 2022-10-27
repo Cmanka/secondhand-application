@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { AppRoutes } from '../../core/constants/app-routes';
+import { AppRoutes } from '../../pages/core/constants/app-routes';
 import { Wrapper, Link, Logo } from './styles';
 
 const HEADER_ROUTES = [{ label: 'Components', path: AppRoutes.Components }];
